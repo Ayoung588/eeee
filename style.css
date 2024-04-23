@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+/*font end*/
+html {
+	background-color: #ffffff;
+
+}
+
+label {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	user-select: none;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #ffffff;
+
+}
+
+header {
+	padding: 70px 20px 40px 30px;
+	color: #000000;
+	background: #F2F2F2;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Bebas Neue'
+
+}
+
+header h1 {
+	font-size: 50px;
+}
+
+nav {
+    width: 95%; 
+	margin-top: -20px;
+    padding: 0px 0px;
+	text-transform: uppercase;
+	background-color: #ffffffff;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	filter: drop-shadow(2px 5px 5px #CBC8C8);
+}
+
+nav h2 {
+	visibility: hidden;
+	height: 0px;
+}
+
+h2 {
+	padding-left: 30px;
+}
+
+
+nav ul {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	gap: 20px;
+	
+}
+
+span {
+    list-style-type: none;
+    margin: 0 0px; 
+    color: #EB5428;
+    
+}
+
+
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px; 
+}
+
+.menu-item span {
+    text-transform: uppercase;
+}
+
+
+
+.buttons {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	transition: max-height .2s ease-out;
+	flex: 1px;
+	padding: 0.5rem;
+	text-align: center;
+	transition: all 0.5s ease-out;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 0px 0px;
+	font-family: 'Bebas Neue'
+
+}
+
+.buttons:hover {
+	color: #ffffff;
+	background-color: #EB5428;
+	padding: 0.5rem;
+}
+#MainLogo{
+    width: 40px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px 30px 30px 40px;
+	height: 32px;
+}
+
+[href="#home"] {
+	position: absolute;
+	top: 20px;
+	left: 100px;
+	padding: 14px 70px;
+	text-transform: capitalize;
+	font-weight: bold;
+	background-color: #EB5428;
+}
+
+[href="#pfp"] {
+	position: absolute;
+	left: 325px;
+	top: 40px;
+}
+
+.burger {
+	padding: 6px 30px 0px;
+}
+
+
+#signupButton{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    margin-left: 840px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.icontext {
+	color: black;
+	font-family: 'Bebas Neue';
+	font-size: 20px;
+
+
+}
+
+.icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/*navigation*/
+
+/*hamburger*/
+ul {
+	max-height: 0;
+	overflow: hidden;
+	padding: 0;
+
+}
+
+label span:before {
+	top: 5px;
+}
+
+label span:after {
+	top: -5px;
+}
+
+
+
+input:checked~label:not(.steps) span:before,
+input:checked~label:not(.steps) span:after {
+	top: 0;
+}
+
+
+
+/* Styling for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styling for the input field */
+.search-container input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #EB5428;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-top: 40px;
+    
+}
+
+/* Styling for the search button */
+.search-container button {
+    background-color: #EB5428;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+/* Styling for the search icon */
+.search-container button svg {
+    stroke: #fff;
+}
+
+
+
+
+
+#streettacos {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+	
+
+}
+
+.icon-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    gap: 0px; 
+	border: 2px solid crimson;
+	max-width: 130px;
+	font-size: 10px;
+}
+
+.img {
+    flex: 2; 
+    max-width: 100%;
+	max-height: 550px; 
+}
+
+
+.about {
+    flex: 3; 
+    margin-left: 0px; 
+	background-color: #F2F2F2;;
+}
+
+.about p{
+	padding: 0px 10px 0px 10px;
+	margin-bottom: 5px;
+	font-family: 'montserrat';
+	font-size: 15px;
+	line-height: 1.4rem;
+	
+}
+.wrapper{
+display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+justify-content: space-evenly;
+padding: 10px;
+}
+
+
+
+/* Style for the Details section */
+.Details {
+    background-color: #0D0D0D; 
+    color: #7ABFBF;
+    padding: 20px; 
+	
+}
+
+.Details h1 {
+    text-align: center; 
+    margin-bottom: 20px;
+	font-size: 35px; 
+	font-family: 'montserrat';
+}
+
+/* Style for the lists */
+.Details ul {
+	font-family: 'montserrat';
+    display: flex; 
+    justify-items:center; 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    flex-basis: 100%;
+	justify-content: space-evenly; 
+    
+	margin-bottom: 30px;
+}
+.Details ul li{
+display: flex;
+justify-items: center;	
+justify-content: space-evenly;
+margin-top: 20px; 
+line-height: 20px;
+}
+
+.Details ul {
+    margin-top: 10px; 
+}
+.Details ul:first-of-type {
+	font-size: 20px;
+    font-weight: bold;
+}
+.Details ul:nth-of-type(2) {
+	font-size: 15px;
+}
+
+
+
+.recipe {
+    display: flex; /* Use flexbox to arrange the sections side by side */
+    gap: 20px; /* Add space between the two sections */
+    padding: 10px; /* Add padding for the entire section */
+	font-family: 'montserrat';
+
+}
+
+.ingredients {
+	font-family: 'montserrat';
+    width: 20%; 
+	color: #0D0D0D; 
+	
+
+}
+
+.ingredients ul {
+    display: flex; 
+    flex-direction: column; /* Set list items to display in a column */
+    gap: 5px; /* Add some space between list items */
+	padding: 14px;
+	line-height: 22px;
+}
+
+.directions {
+    width: 70%; /* Set the width of the directions section to 70% */
+    background-color: white; /* Set the background color to white */
+}
+
+.recipe h2 {
+   	font-family: 'montserrat';
+    margin-bottom: 10px; 
+	font-weight: bolder;
+}
+.directions p {
+    display: flex; 
+    flex-direction: column; /* Set list items to display in a column */
+    gap: 5px; /* Add some space between list items */
+	padding: 4px;
+}
+
+
+
+
+.grid-container {
+	background-color: #7ABFBF
+	;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+	margin-top: 70px;
+	font-family: 'montserrat';
+}
+
+/* Centered heading */
+#side-dishes h2 {
+	font-family: 'montserrat';
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+	font-weight: 700;
+}
+
+/* Flex layout for dishes container */
+.dish-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 40px;
+}
+
+/* Style for images */
+.dish img {
+    width: 150px;
+    height: auto;
+}
+
+/* Style for titles and details */
+.dish h3, .dish p, .dish h4 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Style for stars */
+.stars {
+    display: flex;
+    justify-content: center;
+}
+
+.stars span {
+    font-size: 20px;
+    color: yellow;
+    margin: 0 2px;
+}
+
+
+
+
+/* Footer styling */
+footer {
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+/* Container to align left and right sections */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Pushes left and right sections to their respective sides */
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the picture */
+.footer-image img {
+    max-width: 100px;
+    margin-right: 20px; 
+}
+
+/* Styling for the text */
+.footer-text {
+    text-align: left;
+	font-weight: 200;
+	font-family: 'montserrat';
+
+	
+}
+
+/* Right side container: Social icons */
+.footer-right {
+    display: flex;
+    gap: 15px; /* Adds spacing between social icons */
+}
+
+/* Styling for social icons */
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query tablet screen*/
+@media screen and (min-width: 834px) {
+	body {
+		
+
+  }
+	nav {
+		
+	}
+
+	ul {
+		display: flex;
+		list-style: none;
+		overflow: visible;
+
+  }
+
+	[href="#home"] {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+
+	a {
+		position: relative;
+		left: 300px;
+		bottom: 60px;
+	}
+
+	label {
+		visibility: hidden;
+	}
+
+	.img {
+		transform: scale(1);
+		min-width: 5em;
+		height: 1250px;
+	}
+
+	.buttons {
+		text-align: center;
+		margin: 0;
+		left: 0px;
+		width: 73px;
+		background-color: #fff;
+	}
+  #sidedishes div {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+  
+
+	/*media query tablet screen*/
+	@media screen and (min-width: 1280px) {
+		body {
+			width: 1280px;
+		}
+    #sidedishes div {
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+      grid-row-gap: 0px; 
+    } 
+  }}
+
+
+  /**/
+
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+    /* Adjust the navigation container */
+    nav {
+        width: 100%; /* Adjust the width to full width */
+        padding: 10px 0; /* Add padding for smaller screens */
+        top: 0; /* Align to the top */
+        position: fixed; /* Make the navigation fixed at the top */
+    }
+
+    /* Adjust the menu items */
+    nav ul {
+        flex-direction: column; /* Stack the menu items vertically */
+    }
+
+    /* Adjust the logo and menu items */
+    #MainLogo {
+        padding: 20px; /* Add padding around the logo */
+        margin-top: 0; /* Remove margin top for smaller screens */
+    }
+
+    /* Adjust button layout */
+    #signupButton {
+        margin-left: 0; /* Remove left margin */
+        justify-content: center; /* Center the button */
+        margin-top: 10px; /* Add margin top */
+    }
+
+    /* Adjust menu item text and icon sizes */
+    .menu-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .menu-item span {
+        font-size: 14px;
+    }
+
+    /* Adjust button styles */
+    .buttons {
+        font-size: 18px; /* Adjust font size */
+        padding: 0.5rem; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust navigation for smaller screens */
+    nav {
+        width: 100%; /* Full width */
+        padding: 5px 0; /* Adjust padding */
+        top: 0; /* Top of the screen */
+        position: fixed; /* Fixed position */
+    }
+
+    /* Adjust the menu items */
+    nav ul {
+        flex-direction: column; /* Stack vertically */
+        padding: 0; /* No padding */
+    }
+
+    /* Adjust the main logo */
+    #MainLogo {
+        width: 30px; /* Adjust width */
+        height: 25px; /* Adjust height */
+        padding: 10px; /* Adjust padding */
+    }
+
+    /* Adjust button layout */
+    #signupButton {
+        margin-left: 0; /* Remove margin */
+        justify-content: center; /* Center the button */
+        margin-top: 5px; /* Add margin */
+    }
+
+    /* Adjust menu item text and icon sizes */
+    .menu-item img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu-item span {
+        font-size: 12px;
+    }
+
+    /* Adjust button styles */
+    .buttons {
+        font-size: 16px; /* Adjust font size */
+        padding: 0.5rem; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    input {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    input {
+        padding: 6px;
+        margin-bottom: 6px;
+    }
+}
+
+/* Media query for screens up to 768px (tablets) */
+@media (max-width: 768px) {
+    #streettacos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Add gap between the items */
+    }
+
+    .icon-container, .img, .about {
+        flex: 1; 
+        max-width: 100%; 
+        margin-bottom: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #streettacos {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .icon-container, .img, .about {
+        flex: 1; /* Each item takes up the full width */
+        max-width: 100%; /* Allow each item to take up full width */
+        margin-bottom: 10px; /* Add margin between items */
+    }
+
+    .icon-container {
+        font-size: 8px; /* Reduce font size for better readability on small screens */
+    }
+}
+
+
+/* Media query for screens up to 768px (tablets) */
+@media (max-width: 768px) {
+    .Details h1 {
+        font-size: 30px; /* Adjust h1 font size for smaller screens */
+    }
+
+    .Details ul {
+        flex-direction: column; /* Change layout to column */
+        align-items: center; /* Center align the items */
+        margin-bottom: 20px; /* Adjust bottom margin */
+    }
+
+    .Details ul li {
+        justify-content: flex-start; /* Align items to the left */
+        padding: 10px 0; /* Add padding to list items */
+        width: 100%; /* Each item takes full width */
+    }
+
+    .Details ul:first-of-type {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .Details ul:nth-of-type(2) {
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+/* Media query for screens up to 480px (mobile) */
+@media (max-width: 480px) {
+    .Details h1 {
+        font-size: 25px; /* Further adjust h1 font size for smaller screens */
+    }
+
+    .Details ul {
+        flex-direction: column; /* Change layout to column */
+        align-items: center; /* Center align the items */
+        margin-bottom: 10px; /* Adjust bottom margin */
+    }
+
+    .Details ul li {
+        justify-content: flex-start; /* Align items to the left */
+        padding: 5px 0; /* Add padding to list items */
+        width: 100%; /* Each item takes full width */
+    }
+
+    .Details ul:first-of-type {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .Details ul:nth-of-type(2) {
+        font-size: 12px; /* Adjust font size */
+    }
+}
+
+/* Media query for screens up to 768px (tablets) */
+@media (max-width: 768px) {
+    .grid-container {
+        height: auto; /* Adjust height for better responsiveness */
+    }
+
+    /* Adjusting dish-container */
+    .dish-container {
+        flex-direction: column; /* Change layout to column */
+        align-items: center; /* Center align the items */
+    }
+
+    /* Adjusting each dish */
+    .dish {
+        margin: 10px; /* Further reduce margin for smaller screens */
+        width: 90%; /* Each dish takes up most of the screen width */
+    }
+
+    /* Adjusting dish images */
+    .dish img {
+        width: 100px; /* Reduce image size */
+    }
+
+    /* Adjusting font sizes */
+    .dish h3, .dish p, .dish h4 {
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+/* Media query for screens up to 480px (mobile) */
+@media (max-width: 480px) {
+    /* Adjusting grid-container */
+    .grid-container {
+        height: auto; /* Adjust height */
+    }
+
+    /* Adjusting dish-container */
+    .dish-container {
+        flex-direction: column; /* Column layout */
+        align-items: center; /* Center align */
+    }
+
+    /* Adjusting each dish */
+    .dish {
+        margin: 5px; /* Smaller margin */
+        width: 100%; /* Each dish takes up full screen width */
+    }
+
+    /* Adjusting dish images */
+    .dish img {
+        width: 80px; /* Further reduce image size */
+    }
+
+    /* Adjusting font sizes */
+    .dish h3, .dish p, .dish h4 {
+        font-size: 12px; /* Adjust font size */
+    }
+}
+
+
+/* Media query for screens up to 768px (tablets) */
+@media (max-width: 768px) {
+    /* Adjusting footer-container */
+    .footer-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        gap: 20px; /* Adds space between the left and right sections */
+    }
+
+    /* Adjusting footer-left */
+    .footer-left {
+        justify-content: center; /* Center align the left side */
+        margin-bottom: 20px; /* Adds space below the left side */
+    }
+
+    /* Adjusting footer-right */
+    .footer-right {
+        justify-content: center; /* Center align the right side */
+    }
+
+    /* Adjusting footer-text */
+    .footer-text {
+        text-align: center; /* Center align the text */
+    }
+
+    /* Adjusting footer-image */
+    .footer-image img {
+        max-width: 80px; /* Reduce image size for smaller screens */
+    }
+}
+
+/* Media query for screens up to 480px (mobile) */
+@media (max-width: 480px) {
+    /* Adjusting footer-container */
+    .footer-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        gap: 15px; /* Adds space between sections */
+    }
+
+    /* Adjusting footer-left */
+    .footer-left {
+        justify-content: center; /* Center align the left side */
+        margin-bottom: 15px; /* Adds space below the left side */
+    }
+
+    /* Adjusting footer-right */
+    .footer-right {
+        justify-content: center; /* Center align the right side */
+    }
+
+    /* Adjusting footer-text */
+    .footer-text {
+        text-align: center; /* Center align the text */
+    }
+
+    /* Adjusting footer-image */
+    .footer-image img {
+        max-width: 60px; /* Further reduce image size for mobile screens */
+    }
+}
